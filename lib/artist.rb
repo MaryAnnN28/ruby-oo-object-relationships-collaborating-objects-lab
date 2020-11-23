@@ -18,7 +18,9 @@ class Artist
           song.artist = self 
      end
 
-     # instance method returns an array of all songs that belong to Artist instance should get all existing Song instances from Song & only selects the ones that are associated with this Artist instance (self)
+     # instance method returns an array of all songs that belong to Artist instance 
+     # should get all existing Song instances from Song & only selects the ones 
+     # that are associated with this Artist instance (self)
      def songs
           Song.all.select { |song| song.artist == self }
      end
